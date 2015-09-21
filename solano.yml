@@ -1,2 +1,12 @@
+system:
+  debug:
+    execsrv: true
+
+ruby_version: "ruby-1.9.3-p545"
+bundler_version: "1.7.12"
+
 test_pattern:
-  - spec/**/*_spec.rb
+  - test/**/*_test.rb
+
+test_exclude_pattern:
+  - test/performance/browsing_test.rb
