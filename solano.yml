@@ -10,3 +10,5 @@ test_pattern:
 
 test_exclude_pattern:
   - test/performance/browsing_test.rb
+
+timeout: 5
