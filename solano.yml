@@ -5,11 +5,22 @@ system:
 ruby_version: "ruby-1.9.3-p545"
 bundler_version: "1.7.12"
 
-test_pattern:
-  - test/**/*_test.rb
+#test_pattern:
+#  - test/**/*_test.rb
 
-test_exclude_pattern:
-  - test/performance/browsing_test.rb
+#test_exclude_pattern:
+#  - test/performance/browsing_test.rb
+
+plan:
+  - one
+  - two
+profiles:
+  one:
+    test_pattern:
+      - test/**/*_test.rb
+  two:
+    test_pattern:
+      - test/performance/browsing_test.rb
 
 #timeout: 2
 
