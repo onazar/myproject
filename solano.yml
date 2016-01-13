@@ -22,5 +22,5 @@ profiles:
     test_pattern:
       - test/**/*_test.rb
 
-#timeout: 2
+timeout: 2
 
