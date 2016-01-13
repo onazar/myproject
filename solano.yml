@@ -20,7 +20,7 @@ profiles:
       - test/**/*_test.rb
   two:
     test_pattern:
-      - test/performance/browsing_test.rb
+      - test/**/*_test.rb
 
 #timeout: 2
 
