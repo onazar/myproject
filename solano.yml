@@ -8,11 +8,16 @@ bundler_version: "1.7.12"
 plan:
   - one
   - two
+  - three
 profiles:
   one:
     test_pattern:
       - test/**/*_test.rb
   two:
+    test_pattern:
+      - test/**/*_test.rb
+
+  three:
     test_pattern:
       - test/**/*_test.rb
 
