@@ -8,8 +8,8 @@ bundler_version: "1.7.12"
 #test_pattern:
 #  - test/**/*_test.rb
 
-#test_exclude_pattern:
-#  - test/performance/browsing_test.rb
+test_exclude_pattern:
+  - test/performance/browsing_test.rb
 
 plan:
   - one
@@ -22,5 +22,10 @@ profiles:
     test_pattern:
       - test/**/*_test.rb
 
-timeout: 2
+notify:
+  - channel: hipchat
+    trigger-on: status-changed
+    branch: master
+
+#timeout: 2
 
