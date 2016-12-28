@@ -27,5 +27,9 @@ notify:
     trigger-on: status-changed
     branch: master
 
+coverage:
+  version: 2
+  enabled: true
+
 #timeout: 2
 
